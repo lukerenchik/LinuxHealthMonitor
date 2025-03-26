@@ -1,0 +1,37 @@
+---
+- name: Collect Linux system metrics
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Get CPU Load
+      shell: uptime
+      register: cpu_load
+
+    - name: Get Memory Usage
+      shell: free -m
+      register: mem_usage
+
+    - name: Get Disk Usage
+      shell: df -h /
+      register: disk_usage
+
+    - name: Get CPU Load Averages
+      shell: cat /proc/loadavg | awk '{print $1, $2, $3}'
+      register: cpu_load
+
+    - name: Get Uptime in Seconds
+      shell: cat /proc/uptime | awk '{print $1}'
+      register: uptime_seconds
+
+
+    - name: Write metrics to JSON file
+      copy:
+        content: |
+          {
+            "cpu_load": "{{ cpu_load.stdout }}",
+            "mem_usage": "{{ mem_usage.stdout_lines }}",
+            "disk_usage": "{{ disk_usage.stdout_lines }}",
+            "uptime_seconds": "{{ uptime_seconds.stdout }}"
+          }
+        dest: "../data/output.json"
+

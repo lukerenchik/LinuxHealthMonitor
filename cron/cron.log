@@ -1,0 +1,80 @@
+Running Linux Health Monitor update...
+
+PLAY [Collect Linux system metrics] ********************************************
+
+TASK [Get CPU Load] ************************************************************
+[WARNING]: Platform linux on host localhost is using the discovered Python
+interpreter at /usr/bin/python3, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+changed: [localhost]
+
+TASK [Get Memory Usage] ********************************************************
+changed: [localhost]
+
+TASK [Ge Disk Usage] ***********************************************************
+changed: [localhost]
+
+TASK [Get CPU Load Averages] ***************************************************
+changed: [localhost]
+
+TASK [Get Uptime in Seconds] ***************************************************
+changed: [localhost]
+
+TASK [Write metrics to JSON file] **********************************************
+[WARNING]: Skipping plugin (/usr/lib/python3/dist-
+packages/ansible/plugins/filter/core.py) as it seems to be invalid: cannot
+import name 'environmentfilter' from 'jinja2.filters'
+(/home/lightbringer/.local/lib/python3.10/site-packages/jinja2/filters.py)
+[WARNING]: Skipping plugin (/usr/lib/python3/dist-
+packages/ansible/plugins/filter/mathstuff.py) as it seems to be invalid: cannot
+import name 'environmentfilter' from 'jinja2.filters'
+(/home/lightbringer/.local/lib/python3.10/site-packages/jinja2/filters.py)
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=6    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Upload complete.
+Health Monitor update complete.
+[Wed Mar 26 12:33:19 PM EDT 2025] Running Linux Health Monitor update...
+
+PLAY [Collect Linux system metrics] ********************************************
+
+TASK [Get CPU Load] ************************************************************
+[WARNING]: Platform linux on host localhost is using the discovered Python
+interpreter at /usr/bin/python3, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+changed: [localhost]
+
+TASK [Get Memory Usage] ********************************************************
+changed: [localhost]
+
+TASK [Get Disk Usage] **********************************************************
+changed: [localhost]
+
+TASK [Get CPU Load Averages] ***************************************************
+changed: [localhost]
+
+TASK [Get Uptime in Seconds] ***************************************************
+changed: [localhost]
+
+TASK [Write metrics to JSON file] **********************************************
+[WARNING]: Skipping plugin (/usr/lib/python3/dist-
+packages/ansible/plugins/filter/core.py) as it seems to be invalid: cannot
+import name 'environmentfilter' from 'jinja2.filters'
+(/home/lightbringer/.local/lib/python3.10/site-packages/jinja2/filters.py)
+[WARNING]: Skipping plugin (/usr/lib/python3/dist-
+packages/ansible/plugins/filter/mathstuff.py) as it seems to be invalid: cannot
+import name 'environmentfilter' from 'jinja2.filters'
+(/home/lightbringer/.local/lib/python3.10/site-packages/jinja2/filters.py)
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=6    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Upload complete.
+[Wed Mar 26 12:33:21 PM EDT 2025] Health Monitor update complete.

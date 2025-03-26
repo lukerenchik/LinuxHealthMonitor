@@ -1,0 +1,40 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  .chart-container {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+  
+  .text-output {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+    border-left: 5px solid #0073bb;
+    padding: 15px;
+    white-space: pre-wrap;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  }
+  
+  .data-table th, .data-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+  }
+  
+  .data-table th {
+    background-color: #0073bb;
+    color: white;
+  }
+  
