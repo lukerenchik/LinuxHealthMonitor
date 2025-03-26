@@ -15,10 +15,8 @@ A lightweight system health monitor built with **Ansible**, **AWS S3**, and a st
 
 ---
 
-## 📸 Screenshot
+## 📸 Website
 
-> _Add a screenshot here showing the live dashboard!_
-> You can take one using `Ctrl + Shift + S` or a tool like Flameshot.
 
 ![Dashboard Screenshot](assets/LinuxHealth.png)
 
